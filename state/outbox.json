@@ -1,27 +1,6 @@
 {
  "pending": [
   {
-   "uid": "0001193125-26-415871",
-   "queued_at": "2026-10-07T00:09:56.050944+00:00",
-   "text": "\ud83d\udd34 SELL CBL $68.2M - Canyon Capital Advisors (IA to Funds) - 10/6 - intends to sell (Form 144 notice, filed before the sale)",
-   "source": "form144",
-   "url": "https://www.sec.gov/Archives/edgar/data/1074034/000119312526415871/0001193125-26-415871-index.htm"
-  },
-  {
-   "uid": "0001493152-26-045958:0",
-   "queued_at": "2026-10-07T00:09:56.050944+00:00",
-   "text": "\ud83d\udfe2 BUY NONE $42.1M - Goldentree Asset Managemen (10% Owner) - 9/24",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1567892/000149315226045958/0001493152-26-045958-index.htm"
-  },
-  {
-   "uid": "0001950047-26-010090",
-   "queued_at": "2026-10-07T00:09:56.050944+00:00",
-   "text": "\ud83d\udd34 SELL NTNX $23.9M - Rajiv (Officer) - 10/6 - intends to sell (Form 144 notice, filed before the sale)",
-   "source": "form144",
-   "url": "https://www.sec.gov/Archives/edgar/data/1618732/000195004726010090/0001950047-26-010090-index.htm"
-  },
-  {
    "uid": "0001950047-26-010086",
    "queued_at": "2026-10-07T00:09:56.050944+00:00",
    "text": "\ud83d\udd34 SELL LUXE $16.9M - Michael (Officer) - 10/6 - intends to sell (Form 144 notice, filed before the sale)",
@@ -3499,6 +3478,27 @@
    "text": "\ud83d\udd34 SELL AMAL $8.4M - Workers (10%) - 10/30 - intends to sell (Form 144 notice, filed before the sale)",
    "source": "form144",
    "url": "https://www.sec.gov/Archives/edgar/data/2008869/000090266426004337/0000902664-26-004337-index.htm"
+  },
+  {
+   "uid": "0001978586-26-000009:0",
+   "queued_at": "2026-11-02T17:21:59.185484+00:00",
+   "text": "\ud83d\udd34 SELL STNG $21.8M - Lauro (CEO) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1978586/000197858626000009/0001978586-26-000009-index.htm"
+  },
+  {
+   "uid": "0000080424-26-000265",
+   "queued_at": "2026-11-02T17:21:59.185484+00:00",
+   "text": "\ud83d\udd34 SELL PG $10.5M - Schulten (Officer) - 11/3 - intends to sell (Form 144 notice, filed before the sale)",
+   "source": "form144",
+   "url": "https://www.sec.gov/Archives/edgar/data/1844763/000008042426000265/0000080424-26-000265-index.htm"
+  },
+  {
+   "uid": "0000853816-26-000069:0",
+   "queued_at": "2026-11-02T17:21:59.185484+00:00",
+   "text": "\ud83d\udfe2 BUY LSTR $715K - Lonegro (Pres) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1653042/000085381626000069/0000853816-26-000069-index.htm"
   }
  ]
 }
