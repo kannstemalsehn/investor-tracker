@@ -1,55 +1,6 @@
 {
  "pending": [
   {
-   "uid": "0001950047-26-010105",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL DDOG $15M - Alexis (Director) - 10/7 - intends to sell (Form 144 notice, filed before the sale)",
-   "source": "form144",
-   "url": "https://www.sec.gov/Archives/edgar/data/1783984/000195004726010105/0001950047-26-010105-index.htm"
-  },
-  {
-   "uid": "0001213900-26-107647:0",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL AXIA3 $14.8M - Batista De Lima (Director) - 10/5",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/2121444/000121390026107647/0001213900-26-107647-index.htm"
-  },
-  {
-   "uid": "0001648401-26-000011:1",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL HPE $13.2M - Neri (Pres) - 10/5",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1648401/000164840126000011/0001648401-26-000011-index.htm"
-  },
-  {
-   "uid": "0001217081-26-000015:1",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL GAP $11.9M - Fisher (Director) - 10/6",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1217081/000121708126000015/0001217081-26-000015-index.htm"
-  },
-  {
-   "uid": "0001217081-26-000015:0",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL GAP $10.1M - Fisher (Director) - 10/5",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1217081/000121708126000015/0001217081-26-000015-index.htm"
-  },
-  {
-   "uid": "0001140361-26-038916:0",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL PBF $10.1M - Control Empresarial De (10% Owner) - 10/5",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1534504/000114036126038916/0001140361-26-038916-index.htm"
-  },
-  {
-   "uid": "0001950047-26-010099",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL NTNX $5.6M - Rajiv (Officer) - 10/7 - intends to sell (Form 144 notice, filed before the sale)",
-   "source": "form144",
-   "url": "https://www.sec.gov/Archives/edgar/data/1618732/000195004726010099/0001950047-26-010099-index.htm"
-  },
-  {
    "uid": "0001193125-26-417005:0",
    "queued_at": "2026-10-07T23:42:31.463917+00:00",
    "text": "\ud83d\udfe2 BUY CRBG $2.3M - Nippon Life Insurance (10% Owner) - 10/5",
@@ -3499,6 +3450,55 @@
    "text": "\ud83d\udfe2 BUY TRTX $13K - Gillmore (Director) - 10/30",
    "source": "form4",
    "url": "https://www.sec.gov/Archives/edgar/data/1711880/000119312526444481/0001193125-26-444481-index.htm"
+  },
+  {
+   "uid": "0001765496-26-000020:0",
+   "queued_at": "2026-11-03T20:41:52.279530+00:00",
+   "text": "\ud83d\udfe2 BUY N/A $31M - Manufacturers Life Reinsur (10% Owner) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1765496/000176549626000020/0001765496-26-000020-index.htm"
+  },
+  {
+   "uid": "0001833683-26-000020:0",
+   "queued_at": "2026-11-03T20:41:52.279530+00:00",
+   "text": "\ud83d\udfe2 BUY N/A $12.2M - Manufacturers Life Insuran (10% Owner) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1833683/000183368326000020/0001833683-26-000020-index.htm"
+  },
+  {
+   "uid": "0001969223-26-001120",
+   "queued_at": "2026-11-03T20:41:52.279530+00:00",
+   "text": "\ud83d\udd34 SELL CHD $9.2M - Richard (Officer) - 11/3 - intends to sell (Form 144 notice, filed before the sale)",
+   "source": "form144",
+   "url": "https://www.sec.gov/Archives/edgar/data/1661038/000196922326001120/0001969223-26-001120-index.htm"
+  },
+  {
+   "uid": "0001959173-26-007668",
+   "queued_at": "2026-11-03T20:41:52.279530+00:00",
+   "text": "\ud83d\udd34 SELL DGX $5.6M - Doherty (Officer) - 11/3 - intends to sell (Form 144 notice, filed before the sale)",
+   "source": "form144",
+   "url": "https://www.sec.gov/Archives/edgar/data/1520897/000195917326007668/0001959173-26-007668-index.htm"
+  },
+  {
+   "uid": "0002125773-26-000017:0",
+   "queued_at": "2026-11-03T20:41:52.279530+00:00",
+   "text": "\ud83d\udfe2 BUY N/A $728K - Calamos Aksia Hedged (10% Owner) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/2125773/000212577326000017/0002125773-26-000017-index.htm"
+  },
+  {
+   "uid": "0001636468-26-000004:0",
+   "queued_at": "2026-11-03T20:41:52.279530+00:00",
+   "text": "\ud83d\udfe2 BUY OCFC $10K - Farris (Director) - 11/3",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1636468/000163646826000004/0001636468-26-000004-index.htm"
+  },
+  {
+   "uid": "20035751:0",
+   "queued_at": "2026-11-03T20:41:52.279530+00:00",
+   "text": "\ud83d\udd34 SELL American Expr Natl Ban $100K-250K - Wagner (Rep. MO02) - traded 10/20 (13d ago)",
+   "source": "house",
+   "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035751.pdf"
   }
  ]
 }
