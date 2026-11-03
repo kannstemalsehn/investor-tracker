@@ -1,27 +1,6 @@
 {
  "pending": [
   {
-   "uid": "0001959173-26-007306",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL ANET $21.1M - Ullal (Officer) - 10/7 - intends to sell (Form 144 notice, filed before the sale)",
-   "source": "form144",
-   "url": "https://www.sec.gov/Archives/edgar/data/1605809/000195917326007306/0001959173-26-007306-index.htm"
-  },
-  {
-   "uid": "0001871006-26-000012:1",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL HOOD $18M - Tenev (CEO) - 10/5",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1871006/000187100626000012/0001871006-26-000012-index.htm"
-  },
-  {
-   "uid": "0001950047-26-010101",
-   "queued_at": "2026-10-07T23:42:31.463917+00:00",
-   "text": "\ud83d\udd34 SELL DUOL $16.3M - Luis Von Ahn (Director) - 10/7 - intends to sell (Form 144 notice, filed before the sale)",
-   "source": "form144",
-   "url": "https://www.sec.gov/Archives/edgar/data/1829259/000195004726010101/0001950047-26-010101-index.htm"
-  },
-  {
    "uid": "0001950047-26-010105",
    "queued_at": "2026-10-07T23:42:31.463917+00:00",
    "text": "\ud83d\udd34 SELL DDOG $15M - Alexis (Director) - 10/7 - intends to sell (Form 144 notice, filed before the sale)",
@@ -3499,6 +3478,27 @@
    "text": "\ud83d\udfe2 BUY ASPE $1M - Arch Venture Fund (10% Owner) - 11/2",
    "source": "form4",
    "url": "https://www.sec.gov/Archives/edgar/data/2124080/000119312526444147/0001193125-26-444147-index.htm"
+  },
+  {
+   "uid": "0001193125-26-444483:0",
+   "queued_at": "2026-11-03T14:35:54.867798+00:00",
+   "text": "\ud83d\udfe2 BUY TRTX $253K - Silverstein (Director) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1630472/000119312526444483/0001193125-26-444483-index.htm"
+  },
+  {
+   "uid": "0001193125-26-444482:0",
+   "queued_at": "2026-11-03T14:35:54.867798+00:00",
+   "text": "\ud83d\udfe2 BUY TRTX $33K - Smith (Director) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1711988/000119312526444482/0001193125-26-444482-index.htm"
+  },
+  {
+   "uid": "0001193125-26-444481:0",
+   "queued_at": "2026-11-03T14:35:54.867798+00:00",
+   "text": "\ud83d\udfe2 BUY TRTX $13K - Gillmore (Director) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1711880/000119312526444481/0001193125-26-444481-index.htm"
   }
  ]
 }
