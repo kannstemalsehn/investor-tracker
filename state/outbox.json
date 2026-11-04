@@ -1,69 +1,6 @@
 {
  "pending": [
   {
-   "uid": "0001193125-26-418024:1",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udd34 SELL NTNX $10.7M - Ramaswami (CEO) - 10/6",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1618732/000119312526418024/0001193125-26-418024-index.htm"
-  },
-  {
-   "uid": "0000905148-26-004407",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udd34 SELL KNTK $6.5M - Isq Global Fund (10%) - 10/8 - intends to sell (Form 144 notice, filed before the sale)",
-   "source": "form144",
-   "url": "https://www.sec.gov/Archives/edgar/data/1904934/000090514826004407/0000905148-26-004407-index.htm"
-  },
-  {
-   "uid": "0001193125-26-417973:0",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udfe2 BUY CRBG $4.1M - Nippon Life Insurance (10% Owner) - 10/6",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526417973/0001193125-26-417973-index.htm"
-  },
-  {
-   "uid": "0001493152-26-046380:0",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udfe2 BUY NRXS $9K - Henrichs (CFO) - 10/8",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1959954/000149315226046380/0001493152-26-046380-index.htm"
-  },
-  {
-   "uid": "0001199835-26-000371:6",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udfe2 BUY WVVI $2K - Osborn (CEO) - 10/7",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/2071307/000119983526000371/0001199835-26-000371-index.htm"
-  },
-  {
-   "uid": "0001199835-26-000371:0",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udfe2 BUY WVVI $2K - Osborn (CEO) - 10/7",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/2071307/000119983526000371/0001199835-26-000371-index.htm"
-  },
-  {
-   "uid": "0001199835-26-000371:8",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udfe2 BUY WVVI $2K - Osborn (CEO) - 10/7",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/2071307/000119983526000371/0001199835-26-000371-index.htm"
-  },
-  {
-   "uid": "0001493152-26-046381:0",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udfe2 BUY NRXS $2K - Carrico (CRO, CCO, CPO) - 10/8",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1959325/000149315226046381/0001493152-26-046381-index.htm"
-  },
-  {
-   "uid": "0001493152-26-046382:0",
-   "queued_at": "2026-10-08T22:30:10.018741+00:00",
-   "text": "\ud83d\udfe2 BUY NRXS $1K - Carrico (CEO) - 10/8",
-   "source": "form4",
-   "url": "https://www.sec.gov/Archives/edgar/data/1959279/000149315226046382/0001493152-26-046382-index.htm"
-  },
-  {
    "uid": "0001199835-26-000371:11",
    "queued_at": "2026-10-08T22:30:10.018741+00:00",
    "text": "\ud83d\udfe2 BUY WVVI $886 - Osborn (CEO) - 10/7",
@@ -3499,6 +3436,69 @@
    "text": "\ud83d\udfe2 BUY FUNC $123 - Sturm (EVP & CFO) - 11/2",
    "source": "form4",
    "url": "https://www.sec.gov/Archives/edgar/data/1644053/000101410026000031/0001014100-26-000031-index.htm"
+  },
+  {
+   "uid": "0001104659-26-122289",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udd34 SELL PFGC $151.3M - Sachem Head Capital (Director) - 11/3 - intends to sell (Form 144 notice, filed before the sale)",
+   "source": "form144",
+   "url": "https://www.sec.gov/Archives/edgar/data/1618673/000110465926122289/0001104659-26-122289-index.htm"
+  },
+  {
+   "uid": "0001193125-26-445930:0",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udfe2 BUY SIRI $21.5M - Berkshire Hathaway Inc (10% Owner) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526445930/0001193125-26-445930-index.htm"
+  },
+  {
+   "uid": "0001104659-26-122284:0",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udd34 SELL NONE $20M - Ares Capital Management - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1876006/000110465926122284/0001104659-26-122284-index.htm"
+  },
+  {
+   "uid": "0001213900-26-115698:4",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udfe2 BUY LRN $5.8M - Haggart (Director) - 11/2",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/2162829/000121390026115698/0001213900-26-115698-index.htm"
+  },
+  {
+   "uid": "0001213900-26-115698:1",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udfe2 BUY LRN $3.9M - Haggart (Director) - 10/30",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/2162829/000121390026115698/0001213900-26-115698-index.htm"
+  },
+  {
+   "uid": "0001213900-26-115698:3",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udfe2 BUY LRN $3.9M - Haggart (Director) - 11/2",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/2162829/000121390026115698/0001213900-26-115698-index.htm"
+  },
+  {
+   "uid": "0001193125-26-445930:2",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udfe2 BUY SIRI $3.4M - Berkshire Hathaway Inc (10% Owner) - 11/3",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526445930/0001193125-26-445930-index.htm"
+  },
+  {
+   "uid": "0001213900-26-115698:6",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udfe2 BUY LRN $2.4M - Haggart (Director) - 11/3",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/2162829/000121390026115698/0001213900-26-115698-index.htm"
+  },
+  {
+   "uid": "0001193125-26-445930:1",
+   "queued_at": "2026-11-04T07:16:28.551812+00:00",
+   "text": "\ud83d\udfe2 BUY SIRI $2M - Berkshire Hathaway Inc (10% Owner) - 11/2",
+   "source": "form4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526445930/0001193125-26-445930-index.htm"
   }
  ]
 }
