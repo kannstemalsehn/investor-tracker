@@ -509,30 +509,29 @@ with tempfile.TemporaryDirectory() as _td:
           _f.pe("LOSS", 5.45), (None, "loss-making"))
     check("missing earnings reports no data", _f.pe("NONE", 10.0), (None, "no data"))
 
-# ── Mac agent quiet hours ──────────────────────────────────────────────────
-# The window wraps midnight, which is the easy thing to get wrong: a naive
-# start <= h < end comparison silently never fires for 23->7.
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "mac_agent"))
-from agent import in_quiet_hours  # noqa: E402
+# ── Telegram ───────────────────────────────────────────────────────────────
+# Company names with "&" or "<" must be escaped, or Telegram rejects the whole
+# message with HTTP 400 and the alert is lost.
+from src.notify import telegram as _tg  # noqa: E402
 
-for _h, _want in [(22, False), (23, True), (0, True), (3, True), (6, True),
-                  (7, False), (12, False)]:
-    check(f"quiet hours at {_h:02d}:00",
-          in_quiet_hours(datetime(2026, 9, 14, _h, 0)), _want)
-
-# Regression guard. The first real alert failed because the message was
-# interpolated into the AppleScript source: emoji became \ud83d\udd34 surrogate
-# escapes that AppleScript cannot parse. The message must be passed as an
-# argument instead, so no character in a company name can break the script.
-import inspect  # noqa: E402
-import agent as _agent  # noqa: E402
-
-_src = inspect.getsource(_agent.send_message)
-check("applescript reads argv, not interpolated text", "on run argv" in _src, True)
-check("message is not embedded in the script body",
-      "json.dumps(text)" not in _src, True)
-check("message passed as a subprocess argument",
-      "script, text, to]" in _src, True)
+_tg_t = Trade(source="form4", uid="tg1", person="DOE JANE", action="BUY",
+              ticker="ABC", company="Smith & <Co>", role="CEO", shares=1000,
+              price=12.5, value_usd=12500.0, code="P",
+              trade_date=date(2026, 10, 1), filed_date=date(2026, 10, 3),
+              url="https://www.sec.gov/x?a=1&b=2", reasons=["watchlist: Doe"])
+_tg_msg = _tg.format_message(_tg_t)
+check("telegram escapes &", "Smith &amp; &lt;Co&gt;" in _tg_msg, True)
+check("telegram shows exact volume", "12.500 $" in _tg_msg, True)
+check("telegram shows shares x price", "1.000 Stück × 12,50 $" in _tg_msg, True)
+check("telegram escapes link", "a=1&amp;b=2" in _tg_msg, True)
+_tg_h = Trade(source="house", uid="tg2", person="Pelosi, Nancy", action="SELL",
+              ticker="AAPL", value_range="$1,001 - $15,000",
+              trade_date=date(2026, 8, 1), filed_date=date(2026, 9, 10))
+_tg_hm = _tg.format_message(_tg_h)
+check("telegram shows congress range", "$1,001 - $15,000" in _tg_hm, True)
+check("telegram warns about disclosure lag", "40 Tage" in _tg_hm, True)
+check("telegram chat id list", _tg._chat_ids(" 1, -200 ,,"), ["1", "-200"])
+check("telegram skips without token", _tg.send("", "1", [_tg_t]), 0)
 
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)
