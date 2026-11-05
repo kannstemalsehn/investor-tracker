@@ -19,7 +19,7 @@ from .filters import Watchlist, evaluate, history_entries
 from .http import Fetcher
 from .models import Trade
 from . import store
-from .notify import discord, ntfy, outbox, twilio_sms
+from .notify import discord, ntfy, outbox, telegram, twilio_sms
 from .notify.format import sms_line
 from .sources import edgar_13f, edgar_form4, edgar_form144, house, senate
 from .state import State
@@ -147,6 +147,11 @@ def main(argv=None) -> int:
         log.info("  %s  [%s]", sms_line(t), "; ".join(t.reasons))
 
     n = settings.get("notify", {})
+
+    if n.get("telegram", {}).get("enabled"):
+        telegram.send(os.environ.get("TELEGRAM_BOT_TOKEN", ""),
+                      os.environ.get("TELEGRAM_CHAT_ID", ""), alerts,
+                      dry_run=args.dry_run)
 
     if n.get("discord", {}).get("enabled"):
         discord.send(os.environ.get("DISCORD_WEBHOOK_URL", ""), alerts,

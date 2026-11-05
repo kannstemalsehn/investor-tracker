@@ -12,6 +12,8 @@ between a backtest that can conclude something and one that cannot.
 """
 from __future__ import annotations
 
+import os
+
 import argparse
 import csv
 import io
@@ -34,7 +36,7 @@ log = logging.getLogger("import_bulk")
 
 URL = ("https://www.sec.gov/files/structureddata/data/"
        "insider-transactions-data-sets/{q}_form345.zip")
-UA = {"User-Agent": "Rorey Shen roreyshen@gmail.com"}
+UA = {"User-Agent": os.environ.get("SEC_USER_AGENT", "investor-tracker contact@example.com")}
 
 # Sanity bounds. The raw files contain occasional malformed rows -- share
 # counts in the billions, prices of zero -- and a single bad row can dominate

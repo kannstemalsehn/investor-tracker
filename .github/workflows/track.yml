@@ -20,6 +20,10 @@ on:
         description: 'Cap filings fetched this run (0 = no cap)'
         type: string
         default: '0'
+      telegram_test:
+        description: 'Nur Telegram-Testnachricht senden'
+        type: boolean
+        default: false
 
 # A slow run must never overlap the next scheduled one -- two workers writing
 # state/seen.json produces conflicting commits and duplicate alerts.
@@ -45,12 +49,20 @@ jobs:
       - name: Install dependencies
         run: pip install -q -r requirements.txt
 
-      - name: Run tracker
+      - name: Telegram test
+        if: ${{ inputs.telegram_test }}
         env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m src.notify.telegram
+
+      - name: Run tracker
+        if: ${{ !inputs.telegram_test }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           python -m src.main \
@@ -59,7 +71,7 @@ jobs:
             --limit "${{ inputs.limit || 0 }}"
 
       - name: Persist state
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.telegram_test }}
         run: |
           if [[ -z "$(git status --porcelain state/)" ]]; then
             echo "no state change"; exit 0

@@ -43,27 +43,26 @@ filters:
   # Anyone on the watchlist alerts on EVERY trade, ignoring the thresholds above.
 
 # ── Notification channels ───────────────────────────────────────────────────
+# Secrets (tokens, chat ids, webhook urls) never go in this file -- this repo
+# may be public. They live in GitHub -> Settings -> Secrets -> Actions.
 notify:
+  telegram:
+    # Needs secrets TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID.
+    enabled: true
   discord:
-    enabled: true              # primary channel: free + reliable
+    # Optional. Needs secret DISCORD_WEBHOOK_URL; skipped silently without it.
+    enabled: true
   ntfy:
-    # Free push to your phone, sent from GitHub Actions -- so it arrives even
-    # when the Mac is closed or offline, which the Mac agent cannot do.
-    # The topic is a shared secret and this repo is public, so it lives in the
-    # NTFY_TOPIC GitHub secret, never here.
+    # Optional push via ntfy.sh. Needs secret NTFY_TOPIC; skipped without it.
     enabled: true
-
   mac_agent:
-    # Queues alerts to state/outbox.json for the Mac to text via Messages.app.
-    # The carrier email-to-SMS route was scrapped: Xfinity Mobile bounces it and
-    # Verizon retires the gateway 2027-03-31. See mac_agent/README.md.
-    enabled: true
+    # Original author's macOS iMessage relay. Not used in this fork.
+    enabled: false
   twilio:
-    # Paid fallback, kept ready but off. Only worth it if the Mac agent proves
-    # too unreliable (it only sends while the Mac is awake).
+    # Paid SMS, not used in this fork.
     enabled: false
     from_number: ""
-    to_number: "+14087486507"
+    to_number: ""
 
 # ── Source toggles ──────────────────────────────────────────────────────────
 sources:
@@ -76,7 +75,7 @@ sources:
 http:
   # SEC requires a declared User-Agent with real contact info. They ban IPs that
   # omit it. Rate limit is 10 req/s; we stay at 5 to be polite.
-  user_agent: "Rorey Shen roreyshen@gmail.com"
-  requests_per_second: 8
+  user_agent: "investor-tracker contact@example.com"   # overridden by the SEC_USER_AGENT secret
+  requests_per_second: 5
   timeout_seconds: 30
   max_retries: 3
