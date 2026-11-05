@@ -1,3 +1,6 @@
+> **Dieser Fork:** Telegram-Meldungen auf Deutsch. Einrichtung siehe [EINRICHTUNG.md](EINRICHTUNG.md).
+> Der Text darunter ist das unveränderte README des Originals (roreyshen/investor-tracker).
+
 # Investor Trade Tracker
 
 Watches SEC and congressional filings, texts you when someone worth watching
